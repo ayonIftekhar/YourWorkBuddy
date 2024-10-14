@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact and About</title>
+    <link rel="stylesheet" href="../CSS_resources/about.css"> <!-- Your CSS file -->
+</head>
+<body>
+    <header>
+        <div class="left-header">
+            <img src="../resources/logo-color.png" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="Home.html" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right-header">
+            <a href="#loginModal">Log In</a>
+            <img src="../resources/user.png" alt="User Icon" class="user-icon">
+        </div>
+    </header>
+
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a> <!-- Link to close modal -->
+            <h2>Log In</h2>
+            <form class="modal-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Log In</button>
+            </form>
+            <p class="signup-prompt">Don't have an account? <a href="signup.html" class="signup-link">Sign up</a></p>
+        </div>
+    </div>
+
+    <main>
+        <section id="about" class="content-section">
+            <h1>About Us</h1>
+            <p>
+                Welcome to YourWorkBuddy, where we believe that finding the right help should be simple and accessible for everyone. Our platform serves as a bridge between dedicated job seekers and those in need of reliable services. Whether you’re looking for a part-time nanny, a skilled plumber, a meticulous maid, or any other day-to-day service, we are here to connect you with the right people.
+            </p>
+            <h3>Our Vision</h3>
+            <p>
+                At YourWorkBuddy, our mission is to empower individuals by providing a seamless and efficient way to connect job seekers with job providers. We understand that life can be busy, and finding trustworthy help can be challenging. That's why we strive to simplify this process, allowing both job seekers and providers to connect quickly and efficiently.
+            </p>
+        </section>
+
+        <section id="contact" class="content-section">
+            <h1>Leave a message</h1>
+            <form action="submit_contact.php" method="post"> <!-- Replace with your server-side handling -->
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Office Address: 123 YourStreet, YourCity, YourCountry</p>
+            <p>Hotline: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p>Landline: <a href="tel:+0987654321">+0 (987) 654-321</a></p>
+            <p>Email: <a href="mailto:info@yourworkbuddy.com">info@yourworkbuddy.com</a></p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 YourWorkBuddy. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../CSS_resources/signup.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <div class="left-header">
+            <img src="../resources/logo-color.png" alt="Logo" class="logo"> <!-- Replace with your logo -->
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right-header">
+            <a href="#loginModal">Log In</a>
+            <img src="../resources/user.png" alt="User Icon" class="user-icon">
+        </div>
+    </header>
+
+
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a> <!-- Link to close modal -->
+            <h2>Log In</h2>
+            <form class="modal-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Log In</button>
+            </form>
+            <p class="signup-prompt">Don't have an account? <a href="signup.html" class="signup-link">Sign up</a></p>
+        </div>
+    </div>
+
+    <main>
+        <div class="sign-up-section">
+            <h1>Create Your Account</h1>
+            <form>
+                <input type="text" placeholder="Username" required />
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Password" required />
+                <input type="text" placeholder="Current Address" required />
+                <input type="text" placeholder="Permanent Address" required />
+                <input type="date" placeholder="Date of Birth" required />
+                <input type="text" placeholder="NID Number" required />
+                <input type="file" placeholder="Upload a Photo" required />
+                <select name="category" required>
+                    <option value="" disabled selected>Select Category</option>
+                    <option value="service-seeker">Service Seeker</option>
+                    <option value="service-provider">Service Provider</option>
+                </select>
+                <input type="tel" placeholder="Phone Number" required />
+                <input type="email" placeholder="Email (optional)" />
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="#loginModal">Log In</a></p>
+        </div>
+    </main>
+</body>
+</html>

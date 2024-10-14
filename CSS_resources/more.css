@@ -1,0 +1,248 @@
+
+body {
+    font-family: Arial, sans-serif;
+    /* background-image: url('../resources/background_home.jpg'); Path to your background image */
+    background-size: cover; /* Makes sure the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Ensures the image covers the full viewport height */
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* background-color: rgba(255, 255, 255, 0.4); */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    position: relative;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px; /* Adjust based on your logo size */
+    height: auto;
+    margin-right: 25px;
+    margin-left: 15px;
+    margin-top: 0px;
+    padding: 5px;
+    border-radius: 25%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+
+nav ul li {
+    margin-right: 20px;
+    padding: 10px ;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-style: inherit;
+}
+
+nav ul li a:hover {
+    /* background-color: #f0f0f0; Light gray background on hover */
+    color: #007BFF; /* A nice blue color on hover */
+    border-radius: 5px; /* Optional: round the edges on hover */
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.right-header img {
+    width: 100px; /* Adjust based on your logo size */
+    height: auto;
+    margin-right: 35px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 5px;
+}
+
+.right-header a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-size: 20px;
+}
+
+.right-header a:hover {
+    color: #007BFF; /* A nice blue color on hover */
+    border-radius: 5px; /* Optional: round the edges on hover */
+}
+
+
+
+
+.user-icon {
+    width: 30px;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 15px;
+    border-radius: 70%;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px; /* Adds padding around the main content */
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.more-section {
+    max-width: 800px; /* Set a max width for the content */
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center; /* Center the main title */
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px; /* Space above each section */
+    margin-bottom: 10px; /* Space below each section */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5; /* Improve readability */
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.read-more:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.rate-us {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.rate-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.rate-form label {
+    margin-top: 10px; /* Space above label */
+}
+
+.rate-form select {
+    margin-top: 10px;
+    margin-bottom: 10px; /* Space below select */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px; /* Add padding for button */
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555; /* Darker on hover */
+}
+.more-section {
+    padding: 20px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+/* Show modals when their IDs are targeted */
+#termsModal:target,
+#privacyModal:target {
+    display: block; /* Show the modal */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 600px; /* Maximum width */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Link to close modal */
+.read-more {
+    color: #007BFF; /* Link color */
+    text-decoration: underline; /* Underline for readability */
+}
+
+.read-more:hover {
+    text-decoration: none; /* No underline on hover */
+}
+

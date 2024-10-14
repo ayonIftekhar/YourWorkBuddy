@@ -1,0 +1,179 @@
+
+body {
+    font-family: Arial, sans-serif;
+    /* background-image: url('../resources/background_home.jpg'); Path to your background image */
+    background-size: cover; /* Makes sure the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Ensures the image covers the full viewport height */
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* background-color: rgba(255, 255, 255, 0.4); */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    position: relative;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px; /* Adjust based on your logo size */
+    height: auto;
+    margin-right: 25px;
+    margin-left: 15px;
+    margin-top: 0px;
+    padding: 5px;
+    border-radius: 25%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+
+nav ul li {
+    margin-right: 20px;
+    padding: 10px ;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-style: inherit;
+}
+
+nav ul li a:hover {
+    /* background-color: #f0f0f0; Light gray background on hover */
+    color: #007BFF; /* A nice blue color on hover */
+    border-radius: 5px; /* Optional: round the edges on hover */
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.right-header img {
+    width: 100px; /* Adjust based on your logo size */
+    height: auto;
+    margin-right: 35px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 5px;
+}
+
+.right-header a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-size: 20px;
+}
+
+.right-header a:hover {
+    color: #007BFF; /* A nice blue color on hover */
+    border-radius: 5px; /* Optional: round the edges on hover */
+}
+
+
+
+
+.user-icon {
+    width: 30px;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 15px;
+    border-radius: 70%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Search Section Styling */
+.search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    /* margin-top: 150px; */
+    background-color: #c2c7cd;
+    width: 70%;
+    border-radius: 30%;
+    margin-bottom: 50px;
+}
+
+/* Search Bar Container */
+.search-bar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+}
+
+/* Form Label Styling */
+.form-label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Dropdown Menu Styling */
+.dropdown {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Input Styling */
+.text-input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Search Button Styling */
+.search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+.search-button:hover {
+    background-color: #555;
+}
+

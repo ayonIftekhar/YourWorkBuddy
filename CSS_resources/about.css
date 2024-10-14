@@ -1,0 +1,300 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* background-color: rgba(255, 255, 255, 0.4); */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    position: relative;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px; /* Adjust based on your logo size */
+    height: auto;
+    margin-right: 25px;
+    margin-left: 15px;
+    margin-top: 0px;
+    padding: 5px;
+    border-radius: 25%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+    padding: 10px ;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-style: inherit;
+}
+
+nav ul li a:hover {
+    /* background-color: #f0f0f0; Light gray background on hover */
+    color: #007BFF; /* A nice blue color on hover */
+    border-radius: 5px; /* Optional: round the edges on hover */
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.right-header img {
+    width: 100px; /* Adjust based on your logo size */
+    height: auto;
+    margin-right: 35px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 5px;
+}
+
+.right-header a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-size: 20px;
+}
+
+.right-header a:hover {
+    color: #007BFF; /* A nice blue color on hover */
+    border-radius: 5px; /* Optional: round the edges on hover */
+}
+
+
+.user-icon {
+    width: 30px;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 15px;
+    border-radius: 70%;
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     /* Space for the fixed header */
+}
+
+.content-section {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 80%; /* Adjust width as necessary */
+    max-width: 600px; /* Maximum width */
+    margin: 20px 0; /* Space between sections */
+}
+
+.content-section p {
+    margin: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content-section h1,h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    width: 100%; /* Full width */
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    width: 100%; /* Full width for button */
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555; /* Darker on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for footer */
+    color: white; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content h3 {
+    margin-bottom: 10px;
+    font-size: 24px; /* Larger font for header */
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 16px; /* Standard text size */
+}
+
+.footer-content a {
+    color: #007BFF; /* Link color */
+    text-decoration: none; /* No underline */
+}
+
+.footer-content a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    font-size: 14px; /* Smaller font for copyright */
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hide the modal by default */
+    position: fixed;
+    z-index: 1000; /* Make sure it sits above everything else */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background */
+}
+
+.modal:target {
+    display: block; /* Show modal when targeted */
+}
+
+.modal-content {
+    background-color: #fff; /* White background for the modal content */
+    margin: 15% auto; /* Center it vertically */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px; /* Set a width for the modal */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add a shadow for depth */
+}
+
+.modal-content h2 {
+    margin-bottom: 20px; /* Spacing below the title */
+    color: #333; /* Darker color for the heading */
+    text-align: center; /* Center the heading */
+}
+
+.modal-form:label {
+    display: block; /* Labels on new lines */
+    margin: 10px 0 5px; /* Spacing above and below */
+    font-size: 16px; /* Adjust font size */
+    color: #555; /* Medium gray color for labels */
+}
+
+.modal-form input[type="text"], input[type="password"] {
+    width: 100%; /* Full width */
+    padding: 10px; /* Inner padding */
+    margin: 5px 0 20px; /* Spacing below inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.modal-form button[type="submit"] {
+    background-color: #007BFF; /* Bootstrap-like blue */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px; /* Inner padding */
+    width: 100%; /* Full width */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.modal-form button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.close {
+    color: #aaa; /* Light gray color for close button */
+    float: right; /* Position it to the right */
+    font-size: 28px; /* Large font size */
+    font-weight: bold; /* Make it bold */
+}
+
+.close:hover,
+.close:focus {
+    color: #000; /* Change color on hover */
+    text-decoration: none; /* No underline */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.signup-prompt {
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Space above the prompt */
+    font-size: 16px; /* Font size for the prompt */
+    color: #555; /* Gray color for the prompt text */
+}
+
+.signup-link {
+    color: #007BFF; /* Blue color for the link */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make it bold */
+}
+
+.signup-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}

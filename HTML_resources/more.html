@@ -1,0 +1,88 @@
+<html>
+<head>
+    <title>Search Jobs</title>
+    <link rel="stylesheet" href="../CSS_resources/more.css">
+</head>
+<body>
+    <header>
+        <div class="left-header">
+            <img src="../resources/logo-color.png" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="#">More</a></li>
+                    <li><a href="about.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right-header">
+            <a href="Home.html">Log Out</a>
+            <img src="../resources/user.png" alt="User Icon" class="user-icon">
+        </div>
+    </header>
+
+    <main>
+        <div class="more-section">
+            <h1>More Information</h1>
+            
+            <section class="terms">
+                <h2>Terms and Conditions</h2>
+                <p>These are the terms and conditions for using YourWorkBuddy. By accessing this website, you agree to comply with the terms outlined below...</p>
+                <a href="#termsModal" class="read-more">Read More</a>
+            </section>
+    
+            <section class="privacy-policy">
+                <h2>Privacy Policy</h2>
+                <p>Your privacy is important to us. This policy outlines how we collect, use, and protect your information...</p>
+                <a href="#privacyModal" class="read-more">Read More</a>
+            </section>
+    
+            <section class="rate-us">
+                <h2>Rate Us</h2>
+                <p>We value your feedback! Please take a moment to rate your experience with YourWorkBuddy:</p>
+                <form class="rate-form">
+                    <label for="rating">Rating:</label>
+                    <select id="rating" name="rating">
+                        <option value="5">5 - Excellent</option>
+                        <option value="4">4 - Good</option>
+                        <option value="3">3 - Average</option>
+                        <option value="2">2 - Poor</option>
+                        <option value="1">1 - Terrible</option>
+                    </select>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </div>
+    
+        <!-- Terms Modal -->
+        <div class="modal" id="termsModal">
+            <div class="modal-content">
+                <a href="#close" class="close">&times;</a>
+                <h2>Terms and Conditions</h2>
+                <p>Full details of the terms and conditions go here...</p>
+                <p>These terms apply to all visitors and users of YourWorkBuddy...</p>
+                <p>By using the site, you acknowledge and agree to these terms...</p>
+            </div>
+        </div>
+    
+        <!-- Privacy Policy Modal -->
+        <div class="modal" id="privacyModal">
+            <div class="modal-content">
+                <a href="#close" class="close">&times;</a>
+                <h2>Privacy Policy</h2>
+                <p>Your privacy is important to us. We have a few fundamental principles:</p>
+                <ul>
+                    <li>We don’t ask you for personal information unless we truly need it.</li>
+                    <li>We don’t share your personal information with anyone except to comply with the law.</li>
+                    <li>We don’t store personal information on our servers unless required for the ongoing operation of one of our services.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+
+</body>
+</html>
+
